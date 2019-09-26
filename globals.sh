@@ -405,7 +405,7 @@ function gcloudrig_create_instance_template {
       --no-boot-disk-auto-delete \
       --no-restart-on-failure \
       --format "value(name)" \
-      --metadata-from-file windows-startup-script-ps1=<(cat "$DIR/gcloudrig-boot.ps1") \
+      --metadata-from-file windows-startup-script-ps1=<(cat "$DIR/powershell/gcloudrig-boot.ps1") \
       --quiet || echo
 }
 
